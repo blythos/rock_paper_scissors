@@ -5,9 +5,11 @@ require_relative('../models/rps.rb')
 class TestRps < MiniTest::Test
 
   def setup()
-    @game1 = Rps.new("Rock", "Paper")
+    @game1 = Rps.new("Scissors", "Paper")
     @game2 = Rps.new("Rock", "Scissors")
     @game3 = Rps.new("Rock", "Rock")
+    @game4 = Rps.new("Paper", "Rock")
+    @game5 = Rps.new("Rock", "Scissors")
   end
 
   def test_player1_rock_wins()
@@ -18,5 +20,15 @@ class TestRps < MiniTest::Test
     assert_equal("tie", @game3.play())
   end
 
+  def test_player1_scissors_wins()
+    assert_equal("scissors", @game1.play())
+  end
 
+  def test_player1_paper_wins()
+    assert_equal("paper", @game4.play())
+  end
+
+  def test_player2_rock_wins()
+    assert_equal("rock", @game5.play())
+  end
 end

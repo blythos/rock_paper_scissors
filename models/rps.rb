@@ -8,8 +8,9 @@ class Rps
   def play()
     if @hand1 == @hand2
       return "tie"
+    elsif @hand1 == "rock" && @hand2 == "scissors"
+      return "rock"
     end
-
   end
 
 end

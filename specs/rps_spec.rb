@@ -10,6 +10,10 @@ class TestRps < MiniTest::Test
     @game3 = Rps.new("Rock", "Rock")
   end
 
+  def test_player1_rock_wins()
+    assert_equal("rock", @game2.play())
+  end
+
   def test_player1_draws()
     assert_equal("tie", @game3.play())
   end

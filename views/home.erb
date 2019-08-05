@@ -1,9 +1,16 @@
 <h1>Welcome to Rock, Paper, Scissors: The Browser Game!</h1>
 
-<p>Which do you wish to choose?</p>
+<img src="/rps.png" id="title">
+<div class="page">
+  <p>Play against the computer! Which do you wish to choose?</p>
 
-<ul>
-  <li><a href="javascript:void(0)" onclick="location.href='/game/rock/<%=@random_selection%>'">Rock</a>?</li>
-  <li><a href="javascript:void(0)" onclick="location.href='/game/paper/<%=@random_selection%>'">Paper</a>?</li>
-  <li><a href="javascript:void(0)" onclick="location.href='/game/scissors/<%=@random_selection%>'">Scissors</a>?</li>
-</ul>
+  <div class="choices">
+  <ul>
+    <li><a href="javascript:void(0)" onclick="location.href='/game/rock/<%=@random_selection%>'">Rock</a>?</li>
+    <li><a href="javascript:void(0)" onclick="location.href='/game/paper/<%=@random_selection%>'">Paper</a>?</li>
+    <li><a href="javascript:void(0)" onclick="location.href='/game/scissors/<%=@random_selection%>'">Scissors</a>?</li>
+  </ul>
+</div>
+
+<p>Remember! Rock beats scissors, scissors beats paper, and paper beats rock!</p>
+</div>

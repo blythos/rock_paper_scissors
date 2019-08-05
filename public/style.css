@@ -1,8 +1,47 @@
+@font-face {
+  font-family:'04b_03';
+  src:url("https://static.itch.io/fonts/04b03.eot");
+  src:url("https://static.itch.io/fonts/04b03.eot?#iefix") format("embedded-opentype"),url("https://static.itch.io/fonts/04b03.woff2") format("woff2"),url("https://static.itch.io/fonts/04b03.woff") format("woff"),url("https://static.itch.io/fonts/04b03.ttf") format("truetype");
+}
+
 body {
-  background-color: lightsteelblue;
+  background-color: #000000;
+  font-family: '04b_03';
+  color: #cc7321;
+  font-weight:normal;
+  font-style:normal
+}
+
+h1 {
+  font-size: 30px;
+  color: #cc7321;
+  text-shadow: 2px 2px 2px #1C6EA4;
 }
 
 a {
-  color: red;
-  font-weight: bold;
+  color: #fff;
+}
+
+#title {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#result {
+  font-size: 40px;
+}
+
+.page {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.choices {
+  width: 700px;
+  padding: 5px;
+  font-size: 20px;
+  margin: 0 auto;
+  border: 2px solid #cc7321;
+  border-radius: 10px;
 }

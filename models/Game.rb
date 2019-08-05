@@ -9,7 +9,7 @@ class Game
     if @hand1 == @hand2
       return "You both play #{@hand1}. It's a tie!"
     elsif @hand1 == "rock" && @hand2 == "scissors"
-      return "You win with #{@hand1}! Comnputer loses with #{@hand2}."
+      return "You win with #{@hand1}! Computer loses with #{@hand2}."
     elsif @hand1 == "scissors" && @hand2 == "paper"
       return "You win with #{@hand1}! Computer loses with #{@hand2}"
     elsif @hand1 == "paper" && @hand2 == "rock"

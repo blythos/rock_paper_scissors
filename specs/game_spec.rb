@@ -1,17 +1,17 @@
 require('minitest/autorun')
 require('minitest/rg')
-require_relative('../models/rps.rb')
+require_relative('../models/Game.rb')
 
-class TestRps < MiniTest::Test
+class TestGame < MiniTest::Test
 
   def setup()
-    @game1 = Rps.new("Scissors", "Paper")
-    @game2 = Rps.new("Rock", "Scissors")
-    @game3 = Rps.new("Rock", "Rock")
-    @game4 = Rps.new("Paper", "Rock")
-    @game5 = Rps.new("Scissors", "Rock")
-    @game6 = Rps.new("Paper", "Scissors")
-    @game7 = Rps.new("Rock", "Paper")
+    @game1 = Game.new("Scissors", "Paper")
+    @game2 = Game.new("Rock", "Scissors")
+    @game3 = Game.new("Rock", "Rock")
+    @game4 = Game.new("Paper", "Rock")
+    @game5 = Game.new("Scissors", "Rock")
+    @game6 = Game.new("Paper", "Scissors")
+    @game7 = Game.new("Rock", "Paper")
   end
 
   def test_player1_rock_wins()

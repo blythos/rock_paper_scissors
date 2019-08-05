@@ -1,9 +1,9 @@
 <h1>Welcome to Rock, Paper, Scissors: The Browser Game!</h1>
 
-Which do you wish to choose?
+<p>Which do you wish to choose?</p>
 
 <ul>
-  <li><a href="">Rock</a>?</li>
-  <li><a href="">Paper</a>?</li>
-  <li><a href="">Scissors</a>?</li>
+  <li><a href="javascript:void(0)" onclick="location.href='/game/rock/<%=@random_selection%>'">Rock</a>?</li>
+  <li><a href="javascript:void(0)" onclick="location.href='/game/paper/<%=@random_selection%>'">Paper</a>?</li>
+  <li><a href="javascript:void(0)" onclick="location.href='/game/scissors/<%=@random_selection%>'">Scissors</a>?</li>
 </ul>

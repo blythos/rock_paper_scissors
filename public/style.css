@@ -1,3 +1,8 @@
 body {
   background-color: lightsteelblue;
 }
+
+a {
+  color: red;
+  font-weight: bold;
+}

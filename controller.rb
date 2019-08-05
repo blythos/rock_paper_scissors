@@ -4,6 +4,8 @@ require_relative("./models/Game.rb") if development?
 also_reload("./models*")
 
 get "/" do
+  choices = ["rock", "paper", "scissors"]
+  @random_selection = choices[rand(0...3)]
   erb(:home)
 end
 
